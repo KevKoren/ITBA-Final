@@ -15,7 +15,7 @@ i= 0
 
 dom = minidom.parse(srcPath)
 
-print("Parse dom ended, startign to write output")
+print("Parse dom ended, starting to write output")
 
 for item in dom.getElementsByTagName('item'):
     fecha = item.getElementsByTagName('fecha')[0].childNodes[0].data.strip()[0:10]
